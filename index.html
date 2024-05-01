@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>McDonald's Bestillingsstander</title>
+    <link rel="stylesheet" href="style.css">
+     </head>
+<body>
+    <h1>McDonald's Bestillingsstander</h1>
+
+    <div id="bestillings-område">
+        <h2>Bestilling #<span id="bestillingsnummer">1</span></h2>
+
+        <div id="menuer">
+            <div class="menu" id="hovedret">
+                <h3>Hovedret</h3>
+                <ul>
+                    <li data-pris="59">Big Mac</li>
+                    <li data-pris="49">McChicken</li>
+                    <li data-pris="39">Cheeseburger</li>
+                    </ul>
+            </div>
+            <div class="menu" id="drikkevarer">
+                <h3>Drikkevarer</h3>
+                <ul>
+                    <li data-pris="18">Coca-Cola</li>
+                    <li data-pris="18">Fanta</li>
+                    <li data-pris="20">Milkshake</li>
+                    </ul>
+            </div>
+            <div class="menu" id="tilbehør">
+                <h3>Tilbehør</h3>
+                <ul>
+                    <li data-pris="12">Pomfritter</li>
+                    <li data-pris="15">Mozzarella Sticks</li>
+                    <li data-pris="10">Chicken McNuggets</li>
+                    </ul>
+            </div>
+            <div class="menu" id="dessert">
+                <h3>Dessert</h3>
+                <ul>
+                    <li data-pris="15">McFlurry</li>
+                    <li data-pris="12">Sundae</li>
+                    <li data-pris="10">Cookies</li>
+                    </ul>
+            </div>
+        </div>
+
+        <div id="kurv">
+            <h2>Kurv</h2>
+            <ul id="kurv-elementer"></ul>
+            <p>Total: <span id="total-pris">0 kr.</span></p>
+            <button id="bestil">Bestil</button>
+            <button id="annuller">Annuller</button>
+        </div>
+    </div>
+
+    <div id="bestillingsseddel" style="display: none;">
+        <h2>Bestilling #<span id="seddel-bestillingsnummer"></span></h2>
+        <ul id="seddel-elementer"></ul>
+        <p>Total: <span id="seddel-total-pris"></span> kr.</p>
+        <button id="luk-seddel">Luk</button>
+    </div>
+
+    <div id="omsætning">
+        <h2>Omsætning: <span id="omsætning-beløb">0 kr.</span></h2>
+    </div>
+    <script src="script.js" type="text/javascript"></script>
+</body>
+</html>
